@@ -9,14 +9,9 @@ export default function Weather(){
     const [location, setLocation] = useState([]);
     const [search, setSearch] = useState([]);
     const [current, setCurrent] = useState([]);
-    //const url = "http://api.weatherapi.com/v1/current.json?key=07c39328eb134ed3add233858230602&q=Paris&aqi=no";
     
     const url = window.location.href;
     const num= url.split('=')
-    //console.log("num",num[1])
-
-    //const num= data.results[1].url.split('/')
-    //console.log("search",window.location.href)
 
 
     const WheatherAPI = async() =>{

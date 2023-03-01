@@ -8,7 +8,9 @@ export default function TimeCart({search}) {
 
     const TimeAPI = async() =>{
 
-        const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=07c39328eb134ed3add233858230602&q=${search}}&aqi=no`);
+        const response = await fetch(`http://api.weatherapi.com/v1/timezone.json?key=07c39328eb134ed3add233858230602&q=${search}`);
+        
+        
 
         const data = await response.json();
 
@@ -25,7 +27,7 @@ export default function TimeCart({search}) {
     if(location){{
         return(
             <>
-            <p>time : {location.localtime} </p>
+                <p>time : {location.localtime} </p>
             </>
         )
 

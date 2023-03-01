@@ -5,8 +5,6 @@ import Cart from "./TimeCart";
 
 export default function Time(){
 
-    const [data, setData] = useState([]);
-    const [location, setLocation] = useState([]);
     const [search, setSearch] = useState([]);
     
     const url = window.location.href;
